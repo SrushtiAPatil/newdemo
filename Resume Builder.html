@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Srushti%20Patil/Downloads/HTML/clgHTml/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .container{
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0,0.1);
+            margin: auto;
+        }
+        label{
+
+          font-weight: bold;
+        }
+        input,textarea,select{
+            width:100%;
+            padding:10px;
+            margin:5px 0 15px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+            width:100%;
+
+        }
+        button:hover{
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Resume Builder Form</h2>
+        <form action="file:///C:/Users/Srushti%20Patil/Downloads/HTML/clgHTml/submit_resume.php" method="post"></form>
+
+        <h3>Personal Information</h3>
+        <label for="fullname">fullname: </label>
+        <input type="text" id="fullname" name="fullname" required="">
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required="">
+
+        <label for="Phone">Phone Number: </label>
+        <input type="tel" id="Phone" name="Phone" required="">
+
+        <label for="Address">Address: </label>
+        <input type="Address" id="Address" name="Address" required="">
+
+        <label for="Linkedin">Linkedin: </label>
+        <input type="url" id="Linkedin" name="Linkedin" required="">
+
+        <label for="Photo">Upload Profile Picture: </label>
+        <input type="file" id="Photo" name="photo" accept="image/*">
+
+
+        <!--Education section-->
+        <h3>Education</h3>
+        <label for="degree">Highest Degree:</label>
+        <input type="text" id="degree" name="degree" required="">
+
+        <label for="University">University/ college:</label>
+        <input type="text" id="University" name="University" required="">
+
+        <label for="Gradyear">year of graduation:</label>
+        <input type="number" id="Gradyear" name="Gradyear" min="1900" max="2100" required="">
+
+        <!--work Experience-->
+        <h3>work Experience</h3>
+        <lable for="company">Comapny Name :</lable>
+        <input type="text" id="company" name="company">
+
+        <lable for="JobTitle">Job Title:</lable>
+        <input type="text" id="JobTitle" name="JobTitle">
+
+        <lable for="JobDesc">Job Description:</lable>
+        <textarea id="JobDesc" name="JobDesc" rows="3"></textarea>
+
+        <label for="workYears">years of Experience:</label>
+        <input type="number" id="workYears" name="workYears" min="0" max="50">
+
+        <!--Skill Section-->
+        <h3>Skills</h3>
+        <label>Select your skills</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="JS">JS
+        <input type="checkbox" name="skills" value="JAVA">JAVA
+        <input type="checkbox" name="skills" value="C++">c++
+        <input type="checkbox" name="skills" value="SQL">SQL
+        <input type="checkbox" name="skills" value="python">python
+
+        <br><br>
+
+        <!--certification-->
+        <h3>certification</h3>
+        <label for="certification">List any certification</label>
+        <textarea id="certification" name="certification" rows="3"></textarea>
+
+        <!--Additional Information-->
+        <h3>Additional Information</h3>
+        <label for="languages">languages Spoken:</label>
+        <input type="text" id="languages" name="languages">
+
+        <label for="Projects">Notable Projects</label>
+        <textarea id="Projects" name="Projects" rows="3"></textarea>
+
+        <label for="hobbies">Hobbies &amp; Interests:</label>
+        <input tyoe="text" id="hobbies" name="hobbies">
+
+        <label for="objective">Career objective</label>
+        <textarea id="objective" name="objective" rows="3"></textarea>
+
+        <!--Submit Button-->
+        <button type="submit">Generate Resume</button>
+    
+        </div>
+      
+    
+    
+
+</body></html>
